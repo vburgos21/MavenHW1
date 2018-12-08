@@ -1,5 +1,6 @@
 package MavenAssignment;
 
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -24,6 +25,7 @@ Note: please provide your remote repo URL. Do not submit any files.
 		
 	String googleTitle = driver.getTitle();
 	System.out.println(googleTitle);
+	Assert.assertEquals("Google", googleTitle);
 		
 	}
 
